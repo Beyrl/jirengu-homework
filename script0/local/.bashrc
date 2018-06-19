@@ -1,1 +1,0 @@
-export PATH="/e/jirengu-learn/script/local:$PATH"
