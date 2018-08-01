@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <title>无缝的轮播</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="window">
+      <div id="slides" class="images">
+        <img src="img/sample_slides/imac.jpg" alt="图片" width="920" height="400">
+        <img src="img/sample_slides/info.jpg" alt="图片" width="920" height="400">
+        <img src="img/sample_slides/iphone.jpg" alt="图片" width="920" height="400">
+        <img src="img/sample_slides/macbook.jpg" alt="图片" width="920" height="400">
+      </div>
+      <div id="previous">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-leftsquare"></use>
+        </svg>
+      </div>
+      <div id="next">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-rightsquare"></use>
+        </svg>
+      </div>
+    </div>
+    <ul id=buttonWrapper style="text-align:center;">
+      <li class="act"><a href="javascript:;"><img src="img/sample_slides/thumb_macbook.png" width="32" height="32"></a></li>
+      <li><a href="javascript:;"><img src="img/sample_slides/thumb_imac.png"width="32" height="32"></a></li>
+      <li><a href="javascript:;"><img src="img/sample_slides/thumb_iphone.png"width="32" height="32"></a></li>
+      <li><a href="javascript:;"><img src="img/sample_slides/thumb_about.png"width="32" height="32"></a></li>
+    </ul>
+    
+  </div>
+  
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="//at.alicdn.com/t/font_772369_xuvo2vky3yp.js"></script>
+  <script src="js.js"></script>
+</body>
+</html>
