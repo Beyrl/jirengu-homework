@@ -2,9 +2,15 @@
     var model = {
       // 获取数据
       init: function(){
-        var APP_ID = 'TsDnap9SEXjSvGSowP7gXXJC-gzGzoHsz'
-        var APP_KEY = 'rGye31p12mM3wFpNRn9RADu9'
-        AV.init({ appId: APP_ID, appKey: APP_KEY })
+        // var APP_ID = 'TsDnap9SEXjSvGSowP7gXXJC-gzGzoHsz'
+        // var APP_KEY = 'rGye31p12mM3wFpNRn9RADu9'
+        // AV.init({ appId: APP_ID, appKey: APP_KEY })
+        var APP_ID = 'BhnPHPHnkhsmRkdBON4WNIRs-gzGzoHsz'
+        var APP_KEY = 'pP2GORaN95baazf1z6A6YQQO'
+        AV.init({
+          appId: APP_ID,
+          appKey: APP_KEY
+        });
       },
       fetch: function(){ 
         var query = new AV.Query('Message');
@@ -53,8 +59,9 @@
       bindEvents: function(){
         this.form.addEventListener('submit', function(e){
           e.preventDefault()
+          console.log(this);
           this.saveMessage()
-        })
+        }.bind(this))
       },
       saveMessage: function(){
         let myForm = this.form
